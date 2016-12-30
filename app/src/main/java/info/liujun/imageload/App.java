@@ -5,7 +5,6 @@ import android.os.Environment;
 import android.util.Log;
 import com.facebook.drawee.backends.pipeline.Fresco;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
-import info.liujun.image.FrescoConfig;
 import java.io.File;
 import okhttp3.OkHttpClient;
 

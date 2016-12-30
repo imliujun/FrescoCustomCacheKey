@@ -1,4 +1,4 @@
-package info.liujun.image;
+package info.liujun.imageload;
 
 import android.app.ActivityManager;
 import android.os.Build;

@@ -1,4 +1,4 @@
-package info.liujun.image;
+package info.liujun.imageload;
 
 import android.net.Uri;
 import android.support.annotation.Nullable;
@@ -13,6 +13,8 @@ import com.facebook.imagepipeline.common.ResizeOptions;
 import com.facebook.imagepipeline.image.ImageInfo;
 import com.facebook.imagepipeline.request.ImageRequest;
 import com.facebook.imagepipeline.request.ImageRequestBuilder;
+import info.liujun.image.LJImageRequest;
+import info.liujun.image.LJImageRequestBuilder;
 
 /**
  * 项目名称：ImageLoad
@@ -23,7 +25,7 @@ import com.facebook.imagepipeline.request.ImageRequestBuilder;
  * 修改时间：16/8/15 16:48
  * 修改备注：
  */
-public class ImageLoader {
+public class FrescoImageLoader {
 
     public static RoundingParams getRoundingParamsAsCircle() {
         return RoundingParams.asCircle();

@@ -1,4 +1,4 @@
-package info.liujun.image;
+package info.liujun.imageload;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -6,6 +6,7 @@ import com.facebook.cache.disk.DiskCacheConfig;
 import com.facebook.common.util.ByteConstants;
 import com.facebook.imagepipeline.backends.okhttp3.OkHttpNetworkFetcher;
 import com.facebook.imagepipeline.core.ImagePipelineConfig;
+import info.liujun.image.LJCacheKeyFactory;
 import java.io.File;
 import okhttp3.OkHttpClient;
 

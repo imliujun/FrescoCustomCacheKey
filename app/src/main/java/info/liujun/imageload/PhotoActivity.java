@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import com.facebook.drawee.backends.pipeline.PipelineDraweeControllerBuilder;
 import com.facebook.drawee.controller.BaseControllerListener;
 import com.facebook.imagepipeline.image.ImageInfo;
-import info.liujun.image.ImageLoader;
 import info.liujun.image.LJImageRequest;
 import me.relex.photodraweeview.PhotoDraweeView;
 
@@ -31,7 +30,7 @@ public class PhotoActivity extends AppCompatActivity {
         String imageUrl = "http://heixiucrm-test.img-cn-beijing.aliyuncs" +
                 ".com/20160623175055_gift_select_animation_1466675455807" +
                 ".gif@195w_195h_1l_1e_1an.gif";
-        PipelineDraweeControllerBuilder draweeController = ImageLoader
+        PipelineDraweeControllerBuilder draweeController = FrescoImageLoader
                 .getDraweeController(photoDraweeView, LJImageRequest
                         .fromUri(imageUrl, imageUrl));
         draweeController

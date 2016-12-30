@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.facebook.common.util.SecureHashUtil;
-import info.liujun.image.ImageLoader;
 import info.liujun.image.LJImageView;
 import java.io.UnsupportedEncodingException;
 
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //        ".cn/images/upload/upc/tx/wallpaper/1212/06/c1/16396010_1354784049718.jpg";
         String imageUrl = "http://heixiucrm-test.img-cn-beijing.aliyuncs" +
                 ".com/20160623175055_gift_select_animation_1466675455807" +
-                ".gif@195w_195h_1l_1e_1an.gif";
+                ".gif@50w_50h_1l_1e_1an.gif";
         //String imageUrl = "http://heixiucrm-test.img-cn-beijing.aliyuncs.com/20160623175055_gift_select_animation_1466675455807.gif";
         String cacheKey = imageUrl;
         //最简单的加载方式，只需要传入URL和cacheKey就可以显示图片
@@ -41,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         // 支持 GIF 动图，需要在gradle添加
         //compile 'com.facebook.fresco:animated-gif:0.12.0'
 
-        ImageLoader.loadImage(imageView, imageUrl, cacheKey);
+        FrescoImageLoader.loadImage(imageView, imageUrl, cacheKey);
 
         try {
             //Fresco 将图片缓存到磁盘时，使用以下方式对cacheKey进行加密作为文件名

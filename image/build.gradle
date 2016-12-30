@@ -4,14 +4,12 @@ apply plugin: 'com.github.dcendents.android-maven'
 group = 'com.github.imliujun'
 
 android {
-    compileSdkVersion 24
-    buildToolsVersion "24.0.3"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
-        minSdkVersion 14
-        targetSdkVersion 24
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
     }
     buildTypes {
         release {
@@ -23,7 +21,8 @@ android {
 }
 
 dependencies {
-    provided "com.facebook.fresco:fresco:0.14.1"
-    provided "com.facebook.fresco:imagepipeline-okhttp3:0.14.1"
-    provided "com.google.code.findbugs:jsr305:3.0.0"
+    provided "com.facebook.fresco:fresco:${FRESCO_VERSION}"
+    provided "com.facebook.fresco:imagepipeline-okhttp3:${FRESCO_VERSION}"
+    provided "com.google.code.findbugs:jsr305:${JSR305_VERSION}"
+    compile "com.android.support:support-annotations:${SUPPORT_LIB_VERSION}"
 }
