@@ -37,7 +37,7 @@ repositories {
 }
 
 dependencies {
-    compile 'com.github.imliujun:FrescoCustomCacheKey:1.0.0'
+    compile 'com.github.imliujun:FrescoCustomCacheKey:1.0.1'
 }
 ```
 
