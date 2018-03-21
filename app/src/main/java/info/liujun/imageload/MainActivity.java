@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         //        ".cn/images/upload/upc/tx/wallpaper/1212/06/c1/16396010_1354784049718.jpg";
         String imageUrl = "http://heixiucrm-test.img-cn-beijing.aliyuncs" +
                 ".com/20160623175055_gift_select_animation_1466675455807" +
-                ".gif@50w_50h_1l_1e_1an.gif";
+                ".gif@131w_131h_1l_1e_1an.gif";
         //String imageUrl = "http://heixiucrm-test.img-cn-beijing.aliyuncs.com/20160623175055_gift_select_animation_1466675455807.gif";
         String cacheKey = imageUrl;
         //最简单的加载方式，只需要传入URL和cacheKey就可以显示图片
